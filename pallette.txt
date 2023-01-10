@@ -1,0 +1,12 @@
+Color pallete Pop
+
+#809ab8
+#f4e6cb
+
+
+32-bit value
+R : 0.3804
+G : 0.4745
+B : 0.5216
+
+Font : KG Happy Solid
