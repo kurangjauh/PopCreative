@@ -1,5 +1,5 @@
 import React from "react";
-import Kenapa from "./components/landingpage/Kenapa";
+import Kenapa from "./components/landingpage/Kenapa.jsx";
 
 import "../src/fonts/KGHAPPY.ttf";
 import "../src/fonts/KGHAPPYShadows.ttf";
