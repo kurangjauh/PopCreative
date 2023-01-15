@@ -109,7 +109,7 @@ const Kenapa = () => {
         <div className="flex justify-center">
           <a href="#">
             <button>
-              <div className="bg-white rounded-full flex justify-center phone:p-2 pc:p-3 pc:w-[200px]">
+              <div className="bg-white rounded-full flex justify-center phone:p-2 pc:p-3 pc:w-[250px]">
                 <div>
                   <img
                     src={Whatsapp}
@@ -120,7 +120,7 @@ const Kenapa = () => {
                     }}
                   />
                 </div>
-                <span className="flex items-center justify-items-center phone:text-sm text-[#0E34B0]">
+                <span className="flex items-center justify-items-center phone:text-sm pc:text-lg text-[#0E34B0]">
                   Whatsapp Chat
                 </span>
               </div>
