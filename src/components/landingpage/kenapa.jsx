@@ -54,7 +54,7 @@ const Kenapa = () => {
       <div className="flex justify-center">
         {/* text kenapa popcreativee */}
         <p className="phone:text-lg pc:text-6xl flex font-bold phone:mx-2 phone:my-4 pc:mx-5 pc:mt-16 pc:mb-24">
-          #Kenapa @popcreativee
+          #Kenapa @popcreativelabs
           <Shake
             h={0}
             v={0}
@@ -102,12 +102,12 @@ const Kenapa = () => {
         <div className="flex phone:text-center justify-center phone:p-10">
           <p className="phone:text-sm pc:text-2xl">
             <span className="phone:text-base pc:text-4xl">YUK,</span> Mari
-            konsultasikan dengan @pop creativee
+            konsultasikan dengan @popcreativelabs
           </p>
           {/* YUK, Mari konsultasikan dengan @popcreativee */}
         </div>
         <div className="flex justify-center">
-          <a href="#">
+          <a href="https://wa.me/+6281381360070">
             <button>
               <div className="bg-white rounded-full flex justify-center phone:p-2 pc:p-3 pc:w-[250px]">
                 <div>

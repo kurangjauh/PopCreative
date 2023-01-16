@@ -15,14 +15,14 @@ const Contact = () => {
     {
       id: 1,
       logo: Insta,
-      text: "@popcreativee",
-      link: "www.google.com",
+      text: "@popcreativelabs",
+      link: "https://instagr.am/popcreativelabs",
     },
     {
       id: 2,
       logo: Email,
       text: "popcreativee@gmail.com",
-      link: "www.google.com",
+      link: "mailto:popcreative@gmail.com",
     },
     {
       id: 3,
