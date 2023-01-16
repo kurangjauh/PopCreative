@@ -53,21 +53,23 @@ const Kenapa = () => {
       {/* wrap all content "Kenapa" */}
       <div className="flex justify-center">
         {/* text kenapa popcreativee */}
-        <p className="phone:text-lg pc:text-6xl flex font-bold phone:mx-2 phone:my-4 pc:mx-5 pc:mt-16 pc:mb-24">
-          #Kenapa @popcreativelabs
-          <Shake
-            h={0}
-            v={0}
-            r={61}
-            dur={1000}
-            int={51}
-            max={100}
-            fixed={true}
-            fixedStop={false}
-            freez={false}
-          >
-            <span>?</span>
-          </Shake>
+        <p className="phone:text-lg phone:text-center pc:text-6xl flex font-bold phone:mx-2 phone:my-4 pc:mx-5 pc:mt-16 pc:mb-24">
+          <div className="pc:flex ">
+            #Kenapa @popcreativelabs
+            <Shake
+              h={0}
+              v={0}
+              r={61}
+              dur={1000}
+              int={51}
+              max={100}
+              fixed={true}
+              fixedStop={false}
+              freez={false}
+            >
+              <span className="phone:text-3xl pc:text-6xl">?</span>
+            </Shake>
+          </div>
         </p>
       </div>
       <div className="grid phone:grid-cols-1 pc:grid-cols-5 justify-items-center gap-x-1">
@@ -82,7 +84,7 @@ const Kenapa = () => {
                     src={elements.logo}
                     alt="tes1"
                     style={{
-                      width: isPhoneOrPc ? "65px" : "120px",
+                      width: isPhoneOrPc ? "65px" : "125px",
                       height: isPhoneOrPc ? "65px" : "120px",
                     }}
                   />
@@ -101,15 +103,18 @@ const Kenapa = () => {
       <div className="pb-10">
         <div className="flex phone:text-center justify-center phone:p-10">
           <p className="phone:text-sm pc:text-2xl">
-            <span className="phone:text-base pc:text-4xl">YUK,</span> Mari
+            <span className="phone:text-lg pc:text-4xl">YUK,</span> Mari
             konsultasikan dengan @popcreativelabs
           </p>
-          {/* YUK, Mari konsultasikan dengan @popcreativee */}
         </div>
         <div className="flex justify-center">
-          <a href="https://wa.me/+6281381360070">
+          <a
+            href="https://wa.me/+6281381360070"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button>
-              <div className="bg-white rounded-full flex justify-center phone:p-2 pc:p-3 pc:w-[250px]">
+              <div className="bg-white rounded-full flex justify-center phone:gap-x-1 phone:p-2 pc:p-3 phone:w-[200px] pc:w-[250px] pc:gap-x-2">
                 <div>
                   <img
                     src={Whatsapp}
