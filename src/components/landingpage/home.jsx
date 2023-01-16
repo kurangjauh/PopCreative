@@ -33,7 +33,7 @@ const home = () => {
           <p className="text-6xl mb-3">We Are</p>
           <p className="text-4xl">Friends Now!</p>
           <p className="text-2xl mt-5">@popcreativelabs</p>
-          <p className="pt-40 pb-5 space-y-3 italic font-light">Instagram Content Creator | Brand Identity | Graphic Design</p>
+          <p className="pt-40 pb-5 space-y-3 italic font-light text-base">Instagram Content Creator | Brand Identity | Graphic Design</p>
         </div>
         <img className="float-right" src={teampop} alt="" width="55%"/>
       </div>
