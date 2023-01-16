@@ -1,25 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-
-//Fonts
-// import './font/KGHAPPYSolid.ttf';
-// import './font/KGHAPPY.ttf';
-// import './font/KGHAPPYShadow.ttf';
+import React from "react"
 
 //Components 
-import Home from './components/landingpage/Home'
-import Kenapa from './components/landingpage/Kenapa'
-import Popular from './components/landingpage/Popular'
+import Home from './components/landingpage/home'
+import Popular from './components/landingpage/popular'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+//Fonts
+import "../src/fonts/KGHAPPY.ttf"
+import "../src/fonts/KGHAPPYShadows.ttf"
+import "../src/fonts/KGHAPPYSolid.ttf"
+
+const App =() =>{
   return (
-      <div>
+      <>
         <Home />
         <Popular />
-        <Kenapa />
-      </div>
+      </>
   )
 }
 
