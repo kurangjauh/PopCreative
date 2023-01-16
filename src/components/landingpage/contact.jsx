@@ -28,7 +28,7 @@ const Contact = () => {
       id: 3,
       logo: Map,
       text: "Cianjur, Indonesia",
-      link: "www.google.com",
+      link: "https://www.google.com/maps/place/Nfeel+Studio/@-6.8110295,107.1602686,15z/data=!4m5!3m4!1s0x2e6853af03872a05:0x8308d075d75f64fd!8m2!3d-6.8219449!4d107.1260203",
     },
   ];
 
@@ -52,15 +52,15 @@ const Contact = () => {
             </div>
             <div className="phone:flex phone:justify-center">
               <p className="text-[#0E34B0]">
-                <span className="phone:text-[70px]">P</span>
-                <span className="phone:text-[50px]">OP</span>
-                <span className="phone:text-[70px]">C</span>
-                <span className="phone:text-[50px]">REATIVE</span>
+                <span className="phone:text-[50px]">P</span>
+                <span className="phone:text-[30px]">OP</span>
+                <span className="phone:text-[50px]">C</span>
+                <span className="phone:text-[30px]">REATIVE</span>
               </p>
             </div>
             <div className="phone:flex phone:justify-center phone:text-center">
               {/* text */}
-              <i className="text-[#0E34B0] phone:text-xs pc:text-sm">
+              <i className="text-[#0E34B0] phone:text-sm phone:px-3 pc:text-base">
                 Instagram Content Creator | Logo & Brand Identity | Graphic
                 Design
               </i>
@@ -73,7 +73,7 @@ const Contact = () => {
             {/* wrap all content */}
             <div className="phone:flex phone:justify-center phone:py-3 pc:justify-start">
               {/* div for #contact us! */}
-              <p className="text-[#0E34B0] phone:text-2xl pc:text-6xl">
+              <p className="text-[#0E34B0] phone:text-3xl pc:text-6xl">
                 # Contact US!
               </p>
             </div>
@@ -93,15 +93,14 @@ const Contact = () => {
                           }}
                         />
                         <div className="phone:flex phone:items-center">
-                          <p className="text-[#0E34B0] phone:text-base">
-                            {elements.text}
-                          </p>
                           <a
                             href={elements.link}
                             target="_blank"
                             rel="noreferrer"
                           >
-                            {elements.text}
+                            <p className="text-[#0E34B0] phone:text-base">
+                              {elements.text}
+                            </p>
                           </a>
                         </div>
                       </li>
