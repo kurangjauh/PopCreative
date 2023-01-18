@@ -51,6 +51,7 @@ const Kenapa = () => {
   });
 
   return (
+    
     <div
       style={{ backgroundColor: "#0E34B0" }}
       className="text-white min-h-screen"
