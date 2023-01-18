@@ -3,6 +3,8 @@ import React from "react"
 //Components 
 import Home from './components/landingpage/home'
 import Popular from './components/landingpage/popular'
+import Kenapa from './components/landingpage/kenapa'
+import Contact from './components/landingpage/contact'
 
 
 //Fonts
@@ -15,6 +17,8 @@ const App =() =>{
       <>
         <Home />
         <Popular />
+        <Kenapa />
+        <Contact />
       </>
   )
 }

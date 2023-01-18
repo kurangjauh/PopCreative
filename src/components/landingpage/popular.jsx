@@ -12,10 +12,10 @@ const popular = () => {
         <p style={{color:"#0e34b0 "}}>#Our<span style={{color:"#ed6a55"}}> Popular </span>Categories</p>
       </div>
       <div className="flex justify-center pt-20 space-x-10 w-auto h-80">
-        <p style={{color:"#0e34b0"}} className="pt-32 text-4xl">Desain Grafis</p>
+        <a href="#"><p style={{color:"#0e34b0"}} className="pt-32 text-4xl">Desain Grafis</p></a>
         <img src={anchorlogo} />
         <img src={iground} />
-        <p style={{color:"#0e34b0"}} className="pt-32 text-4xl">Social Media</p>
+        <a href="#"><p style={{color:"#0e34b0"}} className="pt-32 text-4xl">Social Media</p></a>
       </div>
     </div>
   )

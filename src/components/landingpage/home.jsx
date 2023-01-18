@@ -21,7 +21,7 @@ const home = () => {
       </div>
       <div className="justify-start ml-20 mb-4 ">
         <ul>
-          <li>Home | We're Project | Package | Service | Clients | About Us</li>
+        <li><a href="#">Home</a> | <a href="#">We're Project</a> | <a href="#">Package</a> | <a href="https://drive.google.com/drive/folders/1MmbCQyfUX3FGwylF8FwNyR37sjQALOwL" target="_blank" rel="norefferer" >Service</a> | <a href="#">Clients</a> | <a href="#">About Us</a></li>
         </ul>
         <div className="mr-20 mb-20 flex justify-end">
         <img src={poplogo} alt="" width="6%" />
