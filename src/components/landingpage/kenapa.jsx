@@ -8,9 +8,9 @@ import Whatsapp from "../../assets/Whatsapp-blue.png";
 import { useMediaQuery } from "react-responsive";
 import { Shake } from "reshake";
 
-const isPhoneOrPc = useMediaQuery({
-  query: "(max-width: 1000px)",
-});
+// const isPhoneOrPc = useMediaQuery({
+//   query: "(max-width: 1000px)",
+// });
 
 const Kenapa = () => {
   const cardContent = [

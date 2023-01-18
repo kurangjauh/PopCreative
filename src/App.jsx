@@ -13,13 +13,14 @@ import Contact from './components/landingpage/contact'
 
 const App = () => {
   return (
-    <>
-      <Home />
-      <Popular />
-      <Kenapa />
-      <Contact />
-    </>
-  );
-};
+      <>
+        <Home />
+        <Popular />
+        <Kenapa />
+        <Contact />
+      </>
+  )
+}
+
 
 export default App;
