@@ -1,6 +1,5 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { Helmet } from 'react-helmet'
 
 //Assets
 import headbar from '../../assets/Header(Mirror).png'
