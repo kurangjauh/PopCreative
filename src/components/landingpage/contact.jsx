@@ -113,6 +113,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="">
+      <p className="justify-center text-center text-[10px] lowercase italic opacity-20 pt-32">Copyright ©{new Date().getFullYear()} PopCreativeLabs // Developed with ♥ by <a href="https://instagr.am/kurangjauh">kurangjauh</a> and <a href="https://instagr.am/cumanangin">cumanangin</a></p>
         <img src={Footer} alt="" width="100%" />
       </div>
     </div>
