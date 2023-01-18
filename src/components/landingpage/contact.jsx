@@ -8,7 +8,7 @@ import Footer from "../../assets/Footer Mirror.png";
 
 const Contact = () => {
   const isPhoneOrPc = useMediaQuery({
-    query: "(max-width: 1920px)",
+    query: "(max-width: 1000px)",
   });
 
   const listContactUsPopCreative = [
