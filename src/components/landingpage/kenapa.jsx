@@ -36,7 +36,7 @@ const Kenapa = () => {
       id: 4,
       logo: Time,
       title: "Layanan Professional 24/7",
-      text: "Pop Creative selalu bersamamu. Hubungi kami melalui apa saja, whatsapp, atau web-chat. Penjualan, Konsultasi, hingga Pusat Resolusi. Kita siap membantu!",
+      text: "Pop Creative selalu bersamamu. Hubungi kami melalui apa saja, WhatsApp, atau web-chat. Penjualan, Konsultasi, hingga Pusat Resolusi. Kita siap membantu!",
     },
     {
       id: 5,
@@ -55,6 +55,7 @@ const Kenapa = () => {
     <div
       style={{ backgroundColor: "#0E34B0" }}
       className="text-white min-h-screen"
+      id="service"
     >
       {/* wrap all content "Kenapa" */}
       <div className="flex justify-center">
