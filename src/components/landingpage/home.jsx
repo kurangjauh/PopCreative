@@ -6,19 +6,17 @@ import { useState } from 'react'
 import headbar from '../../assets/Header(Mirror).png'
 import poplogo from '../../assets/Logo Pop White.png'
 import teampop from '../../assets/Team.png'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { ImCancelCircle } from 'react-icons/im'
 
 
 
 
 const home = () => {
+
   {/* constructor */}
-
-  const isPhoneOrPc = useMediaQuery({
-    query: "(max-width: 1000px)",
-  });
-
+  const isPhoneOrPc = useMediaQuery({query: "(max-width: 1000px)",});
   const [showSidebar, setShowSidebar] = useState(false);
-
   const handleSidebar = () => {
     setShowSidebar(true);
     console.log(showSidebar);
@@ -34,40 +32,34 @@ const home = () => {
         <img src={headbar} alt="" width="100%" />
       </div>
       <div className="justify-start pc:ml-20 pc:mb-4 desc">
-        {/* <a href="/home" className="hover:text-red-500">Home</a> | 
-        <a href="#" className="hover:text-red-500"> Our Project</a> | 
-        <a href="https://drive.google.com/file/d/1rMeGIISydAR4aocJh53pOCecUUDFhZ2c/view?usp=sharing" target="_blank" rel="norefferer" className="hover:text-red-500"> Package</a> | 
-        <a href="#service" className="hover:text-red-500"> Service</a> | 
-        <a href="#" className="hover:text-red-500"> Clients</a> | 
-        <a href="#" className="hover:text-red-500"> About Us</a> */}
         <div className="flex justify-start m-3">
           {isPhoneOrPc ? (
             <div className="py-2">
-              <div className="flex justify-center hover:text-red-500">
+              <div className="flex justify-center">
                 {showSidebar ? (
                   <div>
                     <div className="flex justify-center py-2">
                       <ImCancelCircle onClick={handleSidebar} />
                     </div>
-                    <div className="grid justify-center py-3">
+                    <div className="grid justify-center py-3 mx-3">
                       <ul className="grid grid-cols-1">
                         <li>
-                          <a href="">Home</a>
+                          <a href="/home">Home</a>
                         </li>
                         <li>
-                          <a href="">Our Project</a>
+                          <a href="#">Our Project</a>
                         </li>
                         <li>
-                          <a href="">Package</a>
+                          <a href="https://drive.google.com/file/d/1rMeGIISydAR4aocJh53pOCecUUDFhZ2c/view?usp=sharing" target="_blank" rel="norefferer">Package</a>
                         </li>
                         <li>
-                          <a href="">Service</a>
+                          <a href="#service">Service</a>
                         </li>
                         <li>
-                          <a href="">Clients</a>
+                          <a href="#">Clients</a>
                         </li>
                         <li>
-                          <a href="">About Us</a>
+                          <a href="#">About Us</a>
                         </li>
                       </ul>
                     </div>
@@ -80,27 +72,27 @@ const home = () => {
           ) : (
             <ul className="flex gap-x-3 ">
               <li class="hover:text-red-500">
-                <a href="">Home</a>
+                <a href="/home">Home</a>
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="">Our Project</a>
+                <a href="#">Our Project</a>
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="">Package</a>
+                <a href="https://drive.google.com/file/d/1rMeGIISydAR4aocJh53pOCecUUDFhZ2c/view?usp=sharing" target="_blank" rel="norefferer">Package</a>
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="">Service</a>
+                <a href="#service">Service</a>
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="">Clients</a>
+                <a href="#">Clients</a>
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="">About Us</a>
+                <a href="#">About Us</a>
               </li>
             </ul>
           )}
@@ -117,7 +109,7 @@ const home = () => {
           <p className="pc:text-2xl pc:mt-5">@popcreativelabs</p>
           <p className="pt-40 pc:text-base phone:text-[10px] pc:pb-5 space-y-3 italic font-light phone:text-center">Instagram Content Creator | Brand Identity | Graphic Design</p>
         </div>
-        <img className="pc:float-right pc:w-[55%]  pc:visible" src={teampop} alt=""/>
+        <img className="pc:float-right pc:w-[55%]  pc:visible phone:display-none" src={teampop} alt=""/>
       </div> 
    </div>
   )
