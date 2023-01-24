@@ -112,9 +112,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="bg:violet-500 hover:decoration-blue-400">
-      <p className="justify-center text-center text-[10px] lowercase italic opacity-20 pt-32">Copyright ©{new Date().getFullYear()} PopCreativeLabs // Developed with <span class="text-base">♥</span> by <a href="https://instagr.am/kurangjauh" target="_blank" rel="norefferer" className="underline">kurangjauh</a> and <a href="https://instagr.am/cumanangin" target="_blank" rel="norefferer" className="underline">cumanangin</a></p>
-        <img src={Footer} alt="" width="100%" />
+      <div className="bg:violet-500 hover:decoration-blue-400"> 
+      <p className="justify-center text-center text-[10px] opacity-50 pt-32">Copyright ©{new Date().getFullYear()} PopCreativeLabs // Developed with <span class="text-[16px]">♥</span> by <a href="https://instagr.am/kurangjauh" target="_blank" rel="norefferer" className="underline">kurangjauh</a> and <a href="https://instagr.am/cumanangin" target="_blank" rel="norefferer" className="underline">cumanangin</a></p>
+        <img src={Footer} alt="footer" width="100%"/>
       </div>
     </div>
   );
