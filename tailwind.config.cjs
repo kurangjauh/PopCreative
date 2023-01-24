@@ -1,6 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  rules: [
+    {
+      test: /\.(png|jpe?g|gif)$/i,
+      use: [
+        {
+          loader: "file-loader",
+        },
+      ],
+    },
+  ],
   theme: {
     screens: {
       phone: "320px",
@@ -8,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["KG HAPPY Solid", "sans-serif"],
+        sans: ["KG HAPPY Solid"],
       },
     },
   },
