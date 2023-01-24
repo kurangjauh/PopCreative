@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="pc:flex pc:justify-around pc:items-center">
         <div className="phone:flex phone:justify-center">
           {/*  wrap all left side */}
-          <div className="">
+          <div className="pc:mt-10">
             {/* wrap all content at left side */}
             <div className="phone:mx-4 phone:mt-7 phone:mb-2 phone:flex phone:justify-center">
               {/* logo */}
@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
         <div className="phone:flex phone:justify-center phone:p-1 phone:my-7 pc:my-0 pc:p-0">
           {/* wrap all right side */}
-          <div className="">
+          <div className="pc:mt-16">
             {/* wrap all content */}
             <div className="phone:flex phone:justify-center phone:py-3 pc:justify-start">
               {/* div for #contact us! */}
@@ -112,12 +112,32 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="bg:violet-500 hover:decoration-blue-400"> 
-      <p className="justify-center text-center text-[10px] opacity-50 pt-32">Copyright ©{new Date().getFullYear()} PopCreativeLabs // Developed with <span class="text-[16px]">♥</span> by <a href="https://instagr.am/kurangjauh" target="_blank" rel="norefferer" className="underline">kurangjauh</a> and <a href="https://instagr.am/cumanangin" target="_blank" rel="norefferer" className="underline">cumanangin</a></p>
-        <img src={Footer} alt="footer" width="100%"/>
+      <div className="bg:violet-500 hover:decoration-blue-400">
+        <p className="justify-center text-center text-[10px] opacity-50 pt-32">
+          Copyright ©{new Date().getFullYear()} PopCreativeLabs // Developed
+          with <span class="text-[16px]">♥</span> by{" "}
+          <a
+            href="https://instagr.am/kurangjauh"
+            target="_blank"
+            rel="norefferer"
+            className="underline"
+          >
+            kurangjauh
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://instagr.am/cumanangin"
+            target="_blank"
+            rel="norefferer"
+            className="underline"
+          >
+            cumanangin
+          </a>
+        </p>
+        <img src={Footer} alt="footer" width="100%" />
       </div>
     </div>
   );
-            };
+};
 
 export default Contact;
