@@ -13,8 +13,7 @@ import { ImCancelCircle } from 'react-icons/im'
 
 
 const home = () => {
-
-  {/* constructor */}
+  //Constructor
   const isPhoneOrPc = useMediaQuery({query: "(max-width: 1000px)",});
   const [showSidebar, setShowSidebar] = useState(false);
   const handleSidebar = () => {
@@ -35,29 +34,34 @@ const home = () => {
         <div className="flex justify-start m-3">
           {isPhoneOrPc ? (
             <div className="py-2">
-              <div className="flex justify-center">
+              <div className="fixed justify-center">
                 {showSidebar ? (
                   <div>
-                    <div className="flex justify-center py-2">
-                      <ImCancelCircle onClick={handleSidebar} />
+                    <div className="flex justify-center">
+                      <ImCancelCircle onClick={handleSidebar} size={'20px'}/>
                     </div>
-                    <div className="grid justify-center py-3 mx-3">
+                    <div className="grid justify-center">
                       <ul className="grid grid-cols-1">
                         <li>
                           <a href="/home">Home</a>
                         </li>
+                        <hr/>
                         <li>
                           <a href="#">Our Project</a>
                         </li>
+                        <hr/>
                         <li>
                           <a href="https://drive.google.com/file/d/1rMeGIISydAR4aocJh53pOCecUUDFhZ2c/view?usp=sharing" target="_blank" rel="norefferer">Package</a>
                         </li>
+                        <hr/>
                         <li>
                           <a href="#service">Service</a>
                         </li>
+                        <hr/>
                         <li>
                           <a href="#">Clients</a>
                         </li>
+                        <hr/>
                         <li>
                           <a href="#">About Us</a>
                         </li>
@@ -65,7 +69,7 @@ const home = () => {
                     </div>
                   </div>
                 ) : (
-                  <GiHamburgerMenu onClick={handleSidebar} />
+                  <GiHamburgerMenu onClick={handleSidebar} size={'24px'}/>
                 )}
               </div>
             </div>
@@ -109,7 +113,7 @@ const home = () => {
           <p className="pc:text-2xl pc:mt-5">@popcreativelabs</p>
           <p className="pt-40 pc:text-base phone:text-[10px] pc:pb-5 space-y-3 italic font-light phone:text-center">Instagram Content Creator | Brand Identity | Graphic Design</p>
         </div>
-        <img className="pc:float-right pc:w-[55%]  pc:visible phone:display-none" src={teampop} alt=""/>
+        <img className="pc:float-right pc:w-[55%]  pc:visible phone:display-none " src={teampop} alt=""/>
       </div> 
    </div>
   )
