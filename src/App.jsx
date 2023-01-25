@@ -6,18 +6,14 @@ import "../src/fonts/KGHAPPYShadows.ttf"
 import "../src/fonts/KGHAPPYSolid.ttf"
 
 //Components
-import Home from './components/landingpage/home'
-import Popular from './components/landingpage/popular'
-import Kenapa from './components/landingpage/kenapa'
-import Contact from './components/landingpage/contact'
+import LandingPage from "./pages/LandingPage/index"
+import Client from "./pages/Clients/index"
 
 const App = () => {
   return (
       <>
-        <Home />
-        <Popular />
-        <Kenapa />
-        <Contact />
+        <LandingPage />
+        {/* <Client /> */}
       </>
   )
 }

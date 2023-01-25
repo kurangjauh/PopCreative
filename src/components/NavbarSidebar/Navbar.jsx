@@ -3,41 +3,36 @@ import { useMediaQuery } from 'react-responsive'
 import { useState } from 'react'
 
 //Assets
-import headbar from '../../assets/Header(Mirror).png'
-import poplogo from '../../assets/Logo Pop White.png'
-import teampop from '../../assets/Team.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCancelCircle } from 'react-icons/im'
+import poplogo from '../../assets/Logo Pop White.png'
+import headbar from '../../assets/Header(Mirror).png'
 
-
-
-
-const home = () => {
-  //Constructor
-  const isPhoneOrPc = useMediaQuery({query: "(max-width: 1000px)",});
-  const [showSidebar, setShowSidebar] = useState(false);
-  const handleSidebar = () => {
-    setShowSidebar(true);
-    console.log(showSidebar);
-    if (showSidebar === true) {
-      setShowSidebar(false);
-      console.log(showSidebar);
-    }
-  };
+const Navbar = () => {
+    const isPhoneOrPc = useMediaQuery({query: "(max-width: 1000px)",});
+    const [showSidebar, setShowSidebar] = useState(false);
+    const handleSidebar = () => {
+        setShowSidebar(true);
+        console.log(showSidebar);
+        if (showSidebar === true) {
+        setShowSidebar(false);
+        console.log(showSidebar);
+        }
+    };
 
   return (
-    <div style={{ backgroundColor: "#0E34B0" }} className="text-white min-h-screen" id="home">
-      <div className="">
-        <img src={headbar} alt="" width="100%" />
-      </div>
-      <div className="justify-start pc:ml-20 pc:mb-4 desc">
+    <div style={{ backgroundColor: "#0E34B0" }} className="text-white max-h-screen pb-1" id="home">
+        <div className="">
+            <img src={headbar} alt="" width="100%" />
+        </div>
+        <div className="justify-start pc:ml-20 pc:mb-4 desc">
         <div className="flex justify-start m-3">
           {isPhoneOrPc ? (
             <div className="py-2">
               <div className="fixed justify-center">
                 {showSidebar ? (
                   <div>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center ">
                       <ImCancelCircle onClick={handleSidebar} size={'20px'}/>
                     </div>
                     <div className="grid justify-center">
@@ -105,17 +100,8 @@ const home = () => {
           <img src={poplogo} alt="" className="pc:hover:drop-shadow-2xl pc:w-[6%] phone:w-1/6 " /> 
         </div>
       </div>
-      <div className="pc:mr-20 mt-10 flex justify-end">
-        <div className="justify-start pc:text-right pc:mt-10 pc:mr-5 phone:pl-5">
-          <p className="pc:text-8xl pc:mb-5 phone:text-[48px]">Hi,</p>
-          <p className="pc:text-6xl pc:mb-3 phone:text-[32px]">We Are</p>
-          <p className="pc:text-4xl phone:text-[29px]">Friends Now!</p>
-          <p className="pc:text-2xl pc:mt-5">@popcreativelabs</p>
-          <p className="pt-40 pc:text-base phone:text-[10px] pc:pb-5 space-y-3 italic font-light phone:text-center">Instagram Content Creator | Brand Identity | Graphic Design</p>
-        </div>
-        <img className="pc:float-right pc:w-[55%]  pc:visible phone:display-none " src={teampop} alt=""/>
-      </div> 
-   </div>
+    </div>
   )
 }
-export default home
+
+export default Navbar
