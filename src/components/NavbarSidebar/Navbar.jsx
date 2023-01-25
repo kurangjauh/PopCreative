@@ -54,7 +54,7 @@ const Navbar = () => {
                         </li>
                         <hr/>
                         <li>
-                          <a href="#">Clients</a>
+                          <a href="/client">Clients</a>
                         </li>
                         <hr/>
                         <li>
@@ -87,7 +87,7 @@ const Navbar = () => {
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="#">Clients</a>
+                <a href="/client">Clients</a>
               </li>
               |
               <li class="hover:text-red-500">
