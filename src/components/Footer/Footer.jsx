@@ -53,10 +53,10 @@ import FooterImage from "../../assets/Footer Mirror.png";
             </div>
             <div className="phone:flex phone:justify-center">
               <p className="text-[#0E34B0]">
-                <span className="phone:text-[50px]">P</span>
-                <span className="phone:text-[30px]">OP</span>
-                <span className="phone:text-[50px]">C</span>
-                <span className="phone:text-[30px]">REATIVE</span>
+                <span className="phone:text-[40px]">P</span>
+                <span className="phone:text-[25px]">OP</span>
+                <span className="phone:text-[40px]">C</span>
+                <span className="phone:text-[25px]">REATIVE</span>
               </p>
             </div>
             <div className="phone:flex phone:justify-center phone:text-center">

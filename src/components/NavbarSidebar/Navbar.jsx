@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex justify-start m-3">
           {isPhoneOrPc ? (
             <div className="py-2">
-              <div className="fixed justify-center">
+              <div className="flex justify-center">
                 {showSidebar ? (
                   <div>
                     <div className="flex justify-center ">
@@ -96,7 +96,7 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <div className="pc:mr-20 phone:mr-10 mb-20 flex justify-end">
+        <div className="pc:mr-20 phone:mr-10  mb-20 flex justify-end">
           <img src={poplogo} alt="" className="pc:hover:drop-shadow-2xl pc:w-[6%] phone:w-1/6 " /> 
         </div>
       </div>
