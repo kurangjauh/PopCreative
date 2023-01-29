@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex justify-start m-3">
           {isPhoneOrPc ? (
             <div className="py-2">
-              <div className="flex justify-center">
+              <div className="flex absolute h-max justify-center">
                 {showSidebar ? (
                   <div>
                     <div className="flex justify-center ">
@@ -42,7 +42,7 @@ const Navbar = () => {
                         </li>
                         <hr/>
                         <li>
-                          <a href="#">Our Project</a>
+                          <a href="/project">Our Project</a>
                         </li>
                         <hr/>
                         <li>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         </li>
                         <hr/>
                         <li>
-                          <a href="#service">Service</a>
+                          <a href="/home#service">Service</a>
                         </li>
                         <hr/>
                         <li>
@@ -75,7 +75,7 @@ const Navbar = () => {
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="#">Our Project</a>
+                <a href="/project">Our Project</a>
               </li>
               |
               <li class="hover:text-red-500">
@@ -96,7 +96,7 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <div className="pc:mr-20 phone:mr-10  mb-20 flex justify-end">
+        <div className="pc:mr-20 phone:mr-10 mb-20 flex justify-end">
           <img src={poplogo} alt="" className="pc:hover:drop-shadow-2xl pc:w-[6%] phone:w-1/6 " /> 
         </div>
       </div>
