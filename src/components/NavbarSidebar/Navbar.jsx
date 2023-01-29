@@ -36,29 +36,24 @@ const Navbar = () => {
                       <ImCancelCircle onClick={handleSidebar} size={'20px'}/>
                     </div>
                     <div className="grid justify-center">
-                      <ul className="grid grid-cols-1">
+                      <ul className="grid grid-cols-1 gap-y-2 ">
                         <li>
-                          <a href="/home">Home</a>
+                          <a href="/home">Home <hr/></a>
                         </li>
-                        <hr/>
                         <li>
-                          <a href="/project">Our Project</a>
+                          <a href="/project">Our Project <hr/></a>
                         </li>
-                        <hr/>
                         <li>
-                          <a href="https://drive.google.com/file/d/1rMeGIISydAR4aocJh53pOCecUUDFhZ2c/view?usp=sharing" target="_blank" rel="norefferer">Package</a>
+                          <a href="https://drive.google.com/file/d/1rMeGIISydAR4aocJh53pOCecUUDFhZ2c/view?usp=sharing" target="_blank" rel="norefferer">Package <hr/></a>
                         </li>
-                        <hr/>
                         <li>
-                          <a href="/home#service">Service</a>
+                          <a href="/home#service">Service <hr/></a>
                         </li>
-                        <hr/>
                         <li>
-                          <a href="/client">Clients</a>
+                          <a href="/client">Clients <hr/></a>
                         </li>
-                        <hr/>
                         <li>
-                          <a href="#">About Us</a>
+                          <a href="/about">About Us</a>
                         </li>
                       </ul>
                     </div>
@@ -83,7 +78,7 @@ const Navbar = () => {
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="#service">Service</a>
+                <a href="/home#service">Service</a>
               </li>
               |
               <li class="hover:text-red-500">
@@ -91,7 +86,7 @@ const Navbar = () => {
               </li>
               |
               <li class="hover:text-red-500">
-                <a href="#">About Us</a>
+                <a href="/about">About Us</a>
               </li>
             </ul>
           )}
