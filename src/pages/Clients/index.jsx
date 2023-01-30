@@ -64,10 +64,10 @@ const index = () => {
           #Our<span style={{ color: "#ed6a55" }}> Clients </span>
         </p>
       </div>
-      <div className="grid phone:grid-cols-1 pc:grid-cols-5 items-center pc:gap-x-1 pl-2 pr-2 pt-10">
+      <div className="grid phone:grid-cols-1 pc:grid-cols-5 items-center pc:gap-x-1 pl-2 pr-2 pt-10 ">
         {cardContent.map((elements) => {
           return (
-            <li key={elements.id} className="list-none phone:p-8 pc:p-7 hover:bg-blue-500">
+            <li key={elements.id} className="list-none phone:p-8 pc:p-7 hover:bg-blue-500 phone:border-2 pc:border-none">
               <div>
                 <div className="grid justify-items-center">
                   <a href={elements.link} target="_blank" rel="noreferrer">
