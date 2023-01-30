@@ -25,18 +25,17 @@ const Navbar = () => {
         <div className="">
             <img src={headbar} alt="" width="100%" />
         </div>
-        <div className="justify-start pc:ml-20 pc:mb-4 desc">
+        <div className="justify-start pc:ml-20 pc:mb-4">
         <div className="flex justify-start m-3">
           {isPhoneOrPc ? (
-            <div className="py-2">
-              <div className="flex absolute h-max justify-center">
+              <div className="flex absolute justify-center">
                 {showSidebar ? (
                   <div>
-                    <div className="flex justify-center ">
+                    <div className="flex justify-start pb-4">
                       <ImCancelCircle onClick={handleSidebar} size={'20px'}/>
                     </div>
-                    <div className="grid justify-center">
-                      <ul className="grid grid-cols-1 gap-y-2 ">
+                    <div className="px-2 py-2 flex justify-start bg-[#ed6a55] rounded-lg w-[100]">
+                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                         <li>
                           <a href="/home">Home <hr/></a>
                         </li>
@@ -53,7 +52,7 @@ const Navbar = () => {
                           <a href="/client">Clients <hr/></a>
                         </li>
                         <li>
-                          <a href="/about">About Us</a>
+                          <a href="/about">About Us <hr/></a>
                         </li>
                       </ul>
                     </div>
@@ -62,7 +61,6 @@ const Navbar = () => {
                   <GiHamburgerMenu onClick={handleSidebar} size={'24px'}/>
                 )}
               </div>
-            </div>
           ) : (
             <ul className="flex gap-x-3 ">
               <li class="hover:text-red-500">
