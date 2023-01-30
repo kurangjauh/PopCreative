@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 
-//assets
+//Assets
 import anchorlogo from "../../assets/anchor round.png";
 import iground from "../../assets/Instagram round.png";
 
@@ -11,10 +11,7 @@ const Popular = () => {
   });
 
   return (
-    <div
-      style={{ backgroundColor: "#fff9ea" }}
-      className="max-h-fit whitespace-normal pb-32"
-    >
+    <div style={{ backgroundColor: "#fff9ea" }} className="max-h-fit whitespace-normal pb-32">
       <div className="flex justify-center pc:text-6xl phone:text-[42px] phone:text-center pt-20 phone:grid-cols-1">
         <p style={{ color: "#0e34b0 " }}>
           #Our<span style={{ color: "#ed6a55" }}> Popular </span>Categories
@@ -25,11 +22,7 @@ const Popular = () => {
           <div className="">
             {/* wrap 2 logos */}
             <div className="phone:flex phone:justify-center phone:gap-x-5">
-              <a
-                href="#"
-                style={{ color: "#0e34b0" }}
-                className="phone:flex phone:items-center pc:pt-32 pc:text-4xl"
-              >
+              <a href="#" style={{ color: "#0e34b0" }} className="phone:flex phone:items-center pc:pt-32 pc:text-4xl phone:text-[18px]">
                 Desain Grafis
               </a>
               <img
@@ -48,11 +41,7 @@ const Popular = () => {
                   height: isPhoneOrPc ? "120px" : "250px",
                 }}
               />
-              <a
-                href="#"
-                style={{ color: "#0e34b0" }}
-                className="phone:flex phone:items-center pc:pt-32 pc:text-4xl"
-              >
+              <a href="#" style={{ color: "#0e34b0" }} className="phone:flex phone:items-center pc:pt-32 pc:text-4xl phone:text-[18px]">
                 Social Media
               </a>
             </div>

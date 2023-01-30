@@ -1,14 +1,15 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+
+//Assets
 import PopCreative from "../../assets/Logo Pop Blue.png";
 import Insta from "../../assets/Insta-blue.png";
 import Email from "../../assets/Mail-blue.png";
 import Map from "../../assets/Place-blue.png";
-import Footer from "../../assets/Footer Mirror.png";
+import FooterImage from "../../assets/Footer Mirror.png";
 
-const Contact = () => {
-  const isPhoneOrPc = useMediaQuery({
-    query: "(max-width: 1000px)",
+  const Contact = () => {
+    const isPhoneOrPc = useMediaQuery({ query: "(max-width: 1000px)", 
   });
 
   const listContactUsPopCreative = [
@@ -39,23 +40,23 @@ const Contact = () => {
           {/*  wrap all left side */}
           <div className="pc:mt-10">
             {/* wrap all content at left side */}
-            <div className="phone:mx-4 phone:mt-7 phone:mb-2 phone:flex phone:justify-center">
+            <div className="phone:mx-4 phone:mt-20 phone:mb-2 phone:flex phone:justify-center">
               {/* logo */}
               <img
                 src={PopCreative}
                 alt="tes1"
                 style={{
-                  width: isPhoneOrPc ? "100px" : "120px",
-                  height: isPhoneOrPc ? "120px" : "140px",
+                  width: isPhoneOrPc ? "80px" : "120px",
+                  height: isPhoneOrPc ? "100px" : "140px",
                 }}
               />
             </div>
             <div className="phone:flex phone:justify-center">
               <p className="text-[#0E34B0]">
-                <span className="phone:text-[50px]">P</span>
-                <span className="phone:text-[30px]">OP</span>
-                <span className="phone:text-[50px]">C</span>
-                <span className="phone:text-[30px]">REATIVE</span>
+                <span className="phone:text-[40px]">P</span>
+                <span className="phone:text-[25px]">OP</span>
+                <span className="phone:text-[40px]">C</span>
+                <span className="phone:text-[25px]">REATIVE</span>
               </p>
             </div>
             <div className="phone:flex phone:justify-center phone:text-center">
@@ -69,9 +70,9 @@ const Contact = () => {
         </div>
         <div className="phone:flex phone:justify-center phone:p-1 phone:my-7 pc:my-0 pc:p-0">
           {/* wrap all right side */}
-          <div className="pc:mt-16">
+          <div className="pc:mt-16 phone:mt-5">
             {/* wrap all content */}
-            <div className="phone:flex phone:justify-center phone:py-3 pc:justify-start">
+            <div className="phone:flex phone:justify-center phone:pt-3 pc:justify-start">
               {/* div for #contact us! */}
               <p className="text-[#0E34B0] phone:text-3xl pc:text-6xl">
                 # Contact US!
@@ -83,7 +84,7 @@ const Contact = () => {
                 {listContactUsPopCreative.map((elements) => {
                   return (
                     <ul key={elements.id}>
-                      <li className="phone:flex phone:p-1 phone:gap-x-1 pc:p-3 pc:gap-x-2">
+                      <li className="phone:flex phone:pt-4 phone:gap-x-1 pc:p-3 pc:gap-x-2">
                         <img
                           src={elements.logo}
                           alt=""
@@ -113,9 +114,9 @@ const Contact = () => {
         </div>
       </div>
       <div className="bg:violet-500 hover:decoration-blue-400">
-        <p className="justify-center text-center text-[10px] opacity-50 pt-32">
-          Copyright ©{new Date().getFullYear()} PopCreativeLabs // Developed
-          with <span class="text-[16px]">♥</span> by{" "}
+        <p className="justify-center text-center text-[10px] opacity-50 pt-32 text-black">
+          Copyright ©{new Date().getFullYear()} <span className="text-[#0E34B0]">PopCreativeLabs</span> // Developed
+          with <span class="text-[16px] text-[#ed6a55]">♥</span> by{" "}
           <a
             href="https://instagr.am/kurangjauh"
             target="_blank"
@@ -134,7 +135,7 @@ const Contact = () => {
             cumanangin
           </a>
         </p>
-        <img src={Footer} alt="footer" width="100%" />
+        <img src={FooterImage} alt="footer" width="100%" />
       </div>
     </div>
   );
