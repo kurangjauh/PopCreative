@@ -34,8 +34,8 @@ const Navbar = () => {
                     <div className="flex justify-start pb-4">
                       <ImCancelCircle onClick={handleSidebar} size={'20px'}/>
                     </div>
-                    <div className="px-2 py-2 flex justify-start bg-[#ed6a55] rounded-lg w-[100]">
-                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                    <div className="px-2 py-2 flex justify-start bg-[#ed6a55] rounded-lg">
+                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 px-2 py-1">
                         <li>
                           <a href="/home">Home <hr/></a>
                         </li>
