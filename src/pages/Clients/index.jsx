@@ -59,15 +59,15 @@ const index = () => {
   return (
     <div style={{ backgroundColor: "#fff9ea" }} className="text-white min-h-screen">
       <Navbar />
-      <div className="flex justify-center pc:text-6xl phone:text-[42px] phone:text-center pt-20 phone:grid-cols-1">
+      <div className="flex justify-center pc:text-6xl phone:text-[42px] phone:text-center pc:pt-20 phone:pt-4 phone:grid-cols-1">
         <p style={{ color: "#0e34b0 " }} className="phone:pl-2">
-          #Our<span style={{ color: "#ed6a55" }}> Clients </span>
+          #Our <span className="text-[#ed6a55] underline">Clients </span>
         </p>
       </div>
       <div className="grid phone:grid-cols-1 pc:grid-cols-5 items-center pc:gap-x-1 pl-2 pr-2 pt-10 ">
         {cardContent.map((elements) => {
           return (
-            <li key={elements.id} className="list-none phone:p-8 pc:p-7 hover:bg-blue-500 phone:border-2 pc:border-none">
+            <li key={elements.id} className="list-none phone:p-8 pc:p-7 hover:bg-blue-500 pc:border-none">
               <div>
                 <div className="grid justify-items-center">
                   <a href={elements.link} target="_blank" rel="noreferrer">
