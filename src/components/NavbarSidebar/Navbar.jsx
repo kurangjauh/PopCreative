@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div style={{ backgroundColor: "#0E34B0" }} className="text-white max-h-screen pb-1" id="home">
         <div className="">
-            <img src={headbar} alt="" width="100%" />
+            <img src={headbar} alt="" width="100%" height="10px"/>
         </div>
         <div className="justify-start pc:ml-20 pc:mb-4">
         <div className="flex justify-start m-3">
