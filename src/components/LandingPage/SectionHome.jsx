@@ -13,7 +13,7 @@ const home = () => {
   const isPhoneOrPc = useMediaQuery({query: "(max-width: 1000px)",});
 
   return (
-    <div style={{ backgroundColor: "#0E34B0" }} className="text-white min-h-screen" id="home">
+    <div style={{ backgroundColor: "#0E34B0" }} className="text-white min-h-screen font-happy" id="home">
       <Navbar />
       <div className="pc:mr-20 mt-10 flex justify-end">
         <div className="justify-start pc:text-right pc:mt-10 pc:mr-5 phone:pl-5">

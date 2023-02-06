@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["KG HAPPY Solid", "Sans Serif"],
+        happy: ["KG HAPPY Solid"],
       },
     },
   },

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root,
+html,
+body {
+    @apply font-happy;
+}
