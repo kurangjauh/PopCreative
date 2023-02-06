@@ -22,7 +22,7 @@ const index = () => {
     },
     {
       id: 4,
-      link: "https://www.instagram.com/p/Cn3bm2phiYz/?igshid=OGQ2MjdiOTE=",
+      link: "https://www.instagram.com/p/CgnqWblB19g/?igshid=OGQ2MjdiOTE=",
     },
     {
       id: 5,
@@ -30,7 +30,7 @@ const index = () => {
     },
     {
       id: 6,
-      link: "https://www.instagram.com/p/CgnqWblB19g/?igshid=OGQ2MjdiOTE=",
+      link: "https://www.instagram.com/p/Cn3bm2phiYz/?igshid=OGQ2MjdiOTE=",
     },
   ];
 
